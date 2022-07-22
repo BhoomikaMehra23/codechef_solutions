@@ -1,0 +1,22 @@
+# Starters 48 Division 4 
+#Problem: FILLCANDIES 
+#include <stdio.h>
+
+int main(void) {
+    int t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        int a,b,c,k;
+        scanf("%d%d%d",&a,&b,&c);
+        int count=1;
+        k=b*c;
+        while(a>k){
+            count++;
+            k=k+b*c;
+        }
+        printf("%d\n",count);
+    }
+	// your code goes here
+	return 0;
+}
