@@ -1,0 +1,23 @@
+#July Long Two 2022
+#Problem-Insurance Problem code-INSURANCE
+#include <stdio.h>
+
+int main(void) {
+    int t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        int x,y;
+        scanf("%d%d",&x,&y);
+        if (x>=y)
+        {
+            printf("%d\n",y);
+        }
+        else 
+        printf("%d\n",x);
+    }
+    
+	// your code goes here
+	return 0;
+}
+
