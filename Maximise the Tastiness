@@ -1,0 +1,36 @@
+Problem Code:MAXTASTE
+Starters 49 Division 4(Rated Contests)
+#include <stdio.h>
+
+int main(void) {
+    int t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        int a,b,c,d,x,y,z,s;
+        scanf("%d%d%d%d",&a,&b,&c,&d);
+        if(a>=b && c>=d)
+        {
+            x=a+c;
+            printf("%d\n",x);
+        }
+        else if(a>=b && d>=c)
+        {
+            y=a+d;
+            printf("%d\n",y);
+        }
+        else if(a<=b && c>=d)
+        {
+            z=b+c;
+            printf("%d\n",z);
+        }
+        else if(a<=b && d>=c)
+        {
+            s=b+d;
+            printf("%d\n",s);
+        }
+    }
+	// your code goes here
+	return 0;
+}
+
